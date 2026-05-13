@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Анализ СМИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-overlay">
+        <div class="quiz-modal">
+            <div class="quiz-header">
+                <h2 id="quiz-title">Загрузка...</h2>
+                <div class="progress-bar-small">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div id="quiz-content">
+                <div id="question-container">
+                    <h3 id="question-number">Вопрос 1 из 5</h3>
+                    <div id="situation-text"></div>
+                    <div id="question-text" class="question-text-main"></div>
+                </div>
+                
+                <div id="options-container" class="options-grid"></div>
+            </div>
+            
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn-primary" disabled>Далее</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="results-modal" class="results-overlay" style="display: none;">
+        <div class="quiz-modal results-modal">
+            <h2>Результаты теста</h2>
+            
+            <div class="score-display">
+                <div class="chart-container">
+                    <canvas id="score-chart" width="200" height="200"></canvas>
+                </div>
+                <p id="score-text" class="score-summary">Вы набрали 0 из 5 баллов</p>
+            </div>
+            
+            <div id="review-container" class="review-list" style="flex: 1;"></div>
+            
+            <div class="results-actions" style="flex-shrink: 0;">
+                <button class="btn-secondary" onclick="confirmExit()">Вернуться на главную</button>
+                <button class="btn-primary" onclick="location.reload()">Пройти снова</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="stats.js"></script>
+    <script src="quiz-news-modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

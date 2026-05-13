@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Новости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <main id="app">
+        <section class="screen active">
+            <div class="glass-card">
+                <a href="index.html" class="back-btn">← Назад</a>
+                
+                <div id="intro-screen">
+                    <h2 id="test-title">Загрузка...</h2>
+                    <p id="test-info">Этот тест займет примерно <span id="time-limit">5</span> минут. <br> Всего вопросов: <span id="q-count">0</span>.</p>
+                    <button class="menu-btn" onclick="startTest()" style="margin: 20px auto; width: 200px;">Начать тест</button>
+                </div>
+
+                <div id="quiz-container" style="display: none; text-align: left; overflow-y: auto; max-height: 60vh;">
+                    <div id="question-content"></div>
+                    <div id="options-list" class="menu-grid" style="grid-template-columns: 1fr;"></div>
+                    <div style="text-align: right; margin-top: 20px;">
+                        <button class="menu-btn" onclick="nextQuestion()">Следующий вопрос</button>
+                    </div>
+                </div>
+
+                <div id="results-screen" style="display: none;">
+                    <h2>Результаты</h2>
+                    <p id="score-text"></p>
+                    <div id="explanations" style="text-align: left; margin-top: 20px;"></div>
+                    <button class="menu-btn" onclick="location.reload()" style="margin: 20px auto; width: 200px;">Пройти еще раз</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="stats.js"></script>
+    <script src="test-news.js"></script>
+</body>
+</html>

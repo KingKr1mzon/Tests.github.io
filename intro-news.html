@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ СМИ - Знакомство</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <main id="app">
+        <section class="screen active">
+            <div class="glass-card" style="max-width: 600px;">
+                <a href="index.html" class="back-btn">← Назад</a>
+                
+                <h2>Анализ СМИ</h2>
+                
+                <div class="test-intro">
+                    <div class="intro-icon">📰</div>
+                    <h3>Манипуляции в новостях</h3>
+                    <p>Научитесь распознавать манипулятивные приёмы и дезинформацию в новостных материалах.</p>
+                    
+                    <div class="test-details">
+                        <div class="detail-item">
+                            <strong>🎯 Цель:</strong>
+                            <span>Распознавать манипуляции и фейки</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>⏱ Время:</strong>
+                            <span>5-7 минут</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong>📋 Вопросов:</strong>
+                            <span>10 вопросов с разбором ответов</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="menu-btn" onclick="startTest()" style="margin-top: 20px; width: 200px;">
+                    Начать тест
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="stats.js"></script>
+    <script>
+        function startTest() {
+            window.location.href = 'quiz-news.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: Анализ СМИ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <main id="app">
+        <section class="screen active">
+            <div class="glass-card">
+                <a href="index.html" class="back-btn" style="text-decoration: none;">← На главную</a>
+                
+                <div id="quiz-screen-news">
+                    <div class="quiz-container">
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div id="progress-fill-news" class="progress-fill"></div>
+                            </div>
+                            <div class="progress-text">
+                                <span id="current-question-news">1</span> из <span id="total-questions-news">10</span>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-text">
+                                <p id="question-text-news"></p>
+                            </div>
+
+                            <div id="options-container-news" class="options-container"></div>
+                        </div>
+
+                        <div class="navigation">
+                            <button id="next-btn-news" class="menu-btn" disabled>Следующий вопрос</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="results-screen-news" style="display: none;">
+                    <div class="results-container">
+                        <h2 class="results-title">Результаты теста</h2>
+
+                        <div class="score-card">
+                            <div class="score-circle">
+                                <svg viewBox="0 0 100 100">
+                                    <circle class="score-bg" cx="50" cy="50" r="45"></circle>
+                                    <circle id="score-progress-news" class="score-fill" cx="50" cy="50" r="45"></circle>
+                                </svg>
+                                <div class="score-text">
+                                    <span id="score-percent-news">0</span>%
+                                </div>
+                            </div>
+                            <p id="score-summary-news" class="score-summary">Вы набрали 0 из 10 баллов</p>
+                        </div>
+
+                        <div class="review-section">
+                            <h3>Детальный разбор вопросов</h3>
+                            <div id="review-container-news" class="review-container"></div>
+                        </div>
+
+                        <button id="restart-btn-news" class="menu-btn">Пройти тест снова</button>
+                        <a href="index.html" class="menu-btn" style="text-decoration: none; margin-left: 10px;">Главное меню</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="stats.js"></script>
+    <script src="quiz-news.js"></script>
+    
+</body>
+</html>

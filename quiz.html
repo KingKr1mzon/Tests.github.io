@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест: социальная инженерия и цифровая безопасность</title>
+    <link rel="stylesheet" href="quiz-style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="quiz-container" class="container">
+            <header>
+                <h1 id="quiz-title">Загрузка теста...</h1>
+                <div id="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <div id="progress-text">0 / 10</div>
+            </header>
+            
+            <main id="quiz-content">
+                <div id="question-card" class="card">
+                    <div id="question-header">
+                        <span id="category-badge"></span>
+                        <span id="question-number"></span>
+                    </div>
+                    <h2 id="situation"></h2>
+                    <p id="question-text"></p>
+                    <div id="options-container"></div>
+                </div>
+            </main>
+            
+            <footer>
+                <button id="prev-btn" class="btn btn-secondary hidden">Назад</button>
+                <button id="next-btn" class="btn btn-primary" disabled>Далее</button>
+            </footer>
+        </div>
+        
+        <div id="results-container" class="container hidden">
+            <header>
+                <h1>Результаты теста</h1>
+            </header>
+            <main>
+                <div class="score-card">
+                    <div class="score-circle">
+                        <span id="final-score">0</span>
+                        <span class="score-total">/ 10</span>
+                    </div>
+                    <p>правильных ответов</p>
+                </div>
+                
+                <div id="review-container">
+                    <h2>Обзор вопросов</h2>
+                    <div id="review-list"></div>
+                </div>
+            </main>
+            <footer>
+                <button id="restart-btn" class="btn btn-primary">Пройти заново</button>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="quiz.js"></script>
+</body>
+</html>

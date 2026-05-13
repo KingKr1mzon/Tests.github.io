@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты теста - Цифровая грамотность</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <main id="app">
+        <section class="screen active">
+            <div class="glass-card" style="max-width: 700px; width: 100%;">
+                <a href="index.html" class="back-btn">← На главную</a>
+                
+                <div class="results-container">
+                    <h2 class="results-title">Результаты теста</h2>
+
+                    <div class="score-card">
+                        <div class="score-circle">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="score-bg" cx="50" cy="50" r="45"></circle>
+                                <circle id="score-progress" class="score-fill" cx="50" cy="50" r="45" style="stroke-dashoffset: 85;"></circle>
+                            </svg>
+                            <div class="score-text">60%</div>
+                        </div>
+                        <p class="score-summary">Вы набрали 6 из 10 баллов</p>
+                    </div>
+
+                    <div class="review-section">
+                        <h3>Детальный разбор вопросов</h3>
+                        
+                        <div class="review-item">
+                            <div class="review-question-header">
+                                <span class="question-num">Вопрос 1</span>
+                                <span class="status-badge correct">✓ Верно</span>
+                            </div>
+                            <div class="question-desc"><strong>Ситуация:</strong> Сообщение от старосты класса</div>
+                            <div class="question-desc"><strong>Вопрос:</strong> Привет! Учитель просил передать...</div>
+                            <div class="options-review">
+                                <div style="color: #10B981; font-weight: 600;">A. Это попытка манипуляции авторитетом учителя</div>
+                                <div class="option-neutral">B. Безопасное информационное сообщение</div>
+                                <div class="option-neutral">C. Фишинг с целью узнать расписание</div>
+                            </div>
+                        </div>
+
+                        <div class="review-item incorrect">
+                            <div class="review-question-header">
+                                <span class="question-num">Вопрос 2</span>
+                                <span class="status-badge wrong">✗ Ошибка</span>
+                            </div>
+                            <div class="question-desc"><strong>Ситуация:</strong> Уведомление от банка</div>
+                            <div class="question-desc"><strong>Вопрос:</strong> Ваша карта будет перевыпущена...</div>
+                            <div class="options-review">
+                                <div class="option-neutral">A. Вишинг (попытка выманить данные)</div>
+                                <div class="option-neutral">B. Смишинг (мошенничество через уведомление)</div>
+                                <div style="color: #10B981; font-weight: 600;">C. Легитимное сервисное сообщение</div>
+                                <div class="option-wrong">Вы выбрали: B - Неверно. Информационное сообщение в официальном канале без ссылок.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="menu-btn">Пройти тест снова</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="stats.js"></script>
+</body>
+</html>

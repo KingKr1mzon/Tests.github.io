@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест - Цифровая грамотность</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    <main id="app">
+        <section class="screen active">
+            <div class="glass-card" style="max-width: 700px; width: 100%;">
+                <a href="index.html" class="back-btn">← На главную</a>
+                
+                <div class="test-interface">
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <div class="progress-text">
+                            <span id="current-question">4</span> из <span id="total-questions">10</span>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="situation-box">
+                            <span class="situation-label">Ситуация:</span>
+                            <p class="situation-text">Сообщение от старосты класса в мессенджере.</p>
+                        </div>
+
+                        <div class="question-text">
+                            <p>Привет! Учитель просил передать, что завтра контрольную перенесли на второй урок. Подтверди в комментариях, кто прочитал.</p>
+                        </div>
+
+                        <div class="options-container">
+                            <button class="option" disabled>
+                                <span class="option-marker">A</span>
+                                <span>Это попытка манипуляции авторитетом учителя</span>
+                            </button>
+                            <button class="option selected">
+                                <span class="option-marker">B</span>
+                                <span>Безопасное информационное сообщение</span>
+                            </button>
+                            <button class="option" disabled>
+                                <span class="option-marker">C</span>
+                                <span>Фишинг с целью узнать расписание</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <button class="menu-btn">Следующий вопрос</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="stats.js"></script>
+</body>
+</html>
