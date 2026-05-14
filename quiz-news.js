@@ -130,8 +130,7 @@ function showResults() {
                 colorStyle = "style=\"color: #10B981; font-weight: 600;\"";
             } else if (isUserWrong) {
                 colorStyle = "style=\"color: #EF4444;\"";
-                explanation = `<div style="color: #6B7280; font-size: 0.875rem; margin-top: 4px; padding-left: 12px;">→ Неверно: ${q.explanation}</div>`;
-            }
+                            }
             optionsHtml += `<div ${colorStyle}>${String.fromCharCode(65 + optIdx)}. ${opt}${explanation}</div>`;
         });
 
